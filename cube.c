@@ -5,7 +5,9 @@
 
 int main(int argc, char **argv)
 {
+    int v[8];
     if (argc<9){
+	if (argc!=2) {
 	printf("Usage: ./cube a b c d e f g h\n");
 	printf("   b---c       \n");
 	printf("  /|  /|       \n");
@@ -14,11 +16,19 @@ int main(int argc, char **argv)
 	printf(" |/  |/        \n");
 	printf(" e---h         \n");
 	return -1;
+	}
+	else {
+	    for (int k=0;k<8;k++)
+	    {
+		v[k]=argv[1][k]-'0';
+	    }
+	}
     }
-    int v[8];
-    for (int i=0;i<8;++i)
-    {
-	v[i]=atoi(argv[i+1]);
+    else {
+        for (int i=0;i<8;++i)
+	{
+	    v[i]=atoi(argv[i+1]);
+        }
     }
     int f[6];
     f[0]=v[0]+v[1]+v[2]+v[3];
