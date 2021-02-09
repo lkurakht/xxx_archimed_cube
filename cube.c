@@ -5,7 +5,7 @@
 
 int main(int argc, char **argv)
 {
-    if (argc<7){
+    if (argc<9){
 	printf("Usage: ./cube a b c d e f g h\n");
 	printf("   b---c       \n");
 	printf("  /|  /|       \n");
