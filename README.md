@@ -1,4 +1,5 @@
 # xxx_archimed_cube
+```
 Проверка задачи №2 XXX Турнира Архимеда
 Usage: ./cube a b c d e f g h
    b---c       
@@ -25,3 +26,4 @@ cube:
   V   v            
  18   26            
 FAIL!
+```
